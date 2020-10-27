@@ -1,8 +1,8 @@
-import * as admin from "firebase-admin";
-import * as functions from "firebase-functions";
-import next from "next";
+const admin = require('firebase-admin')
+const functions = require('firebase-functions')
+const next = require('next')
 
-admin.initializeApp();
+admin.initializeApp()
 
 const dev = process.env.NODE_ENV !== "production";
 const app = next({
@@ -16,6 +16,7 @@ const handle = app.getRequestHandler();
 const server = functions.https.onRequest((request, response) => {
   // log the page.js file or resource being requested
   console.log("File: " + request.originalUrl);
+  request.admin = admin
   return app.prepare().then(() => handle(request, response));
 });
 
@@ -23,4 +24,4 @@ const nextjs = {
   server,
 };
 
-export { nextjs };
+module.exports =  { nextjs };
