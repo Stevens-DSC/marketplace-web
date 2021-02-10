@@ -1,6 +1,14 @@
+import Button from "../components/ui/Button"
+
 
 const Index = props => (
-    <h1>Test</h1>
+    <div>
+      <h1>Test</h1>
+      <Button
+        onClick={()=>console.log("HI")}
+        name="John"
+      />
+    </div>
 )
 
 // Index.getInitialProps = async function () {
