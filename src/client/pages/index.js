@@ -1,6 +1,17 @@
 
+import SearchboxClass from '../components/general/widgets/SearchBoxClass'
+import React from 'react'
+const testFunction = () => {
+    console.log('hello')
+}
 const Index = props => (
-    <h1>Test</h1>
+
+    <div>
+        <SearchboxClass
+            placeholder="Search"
+            onChange={console.log('Firing')}
+            onSubmit={testFunction} />
+    </div>
 )
 
 // Index.getInitialProps = async function () {
