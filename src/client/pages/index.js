@@ -1,5 +1,5 @@
 
-import SearchboxClass from '../components/general/widgets/SearchBoxClass'
+import SearchboxClass from '../components/general/ui/SearchBoxClass.js'
 import React from 'react'
 const testFunction = () => {
     console.log('hello')
