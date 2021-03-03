@@ -15,11 +15,11 @@ const styles = () => ({
 class ProductBox extends React.Component {
 
     render() {
-        const { } = this.props
+        const { item } = this.props
         return (
             <div style={styles()}>
-                
-            </div>
+                <Image src={item} />
+            </div >
 
         );
     }

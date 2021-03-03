@@ -3,7 +3,10 @@ import Link from 'next/link'
 import styleRegistry from "../../css/constants/styles"
 
 const styles = {
-    backgroundColor: styleRegistry.nav_back
+    backgroundColor: styleRegistry.nav_back,
+    width: '100%',
+
+
 }
 
 const styleLinkElement = {
