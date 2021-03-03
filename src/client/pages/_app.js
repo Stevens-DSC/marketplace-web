@@ -3,9 +3,8 @@ import Header from '../components/general/Header'
 
 function app({ Component, pageProps }) {
     return (<>
-
-                <Header />
-                <Component {...pageProps} />
+            <Header />
+            <Component {...pageProps} />
     </>)
 }
 
