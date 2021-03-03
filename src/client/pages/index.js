@@ -1,16 +1,16 @@
 
-import SearchboxClass from '../components/general/widgets/SearchBoxClass'
+import SearchboxClass from '../components/general/ui/SearchBoxClass'
+import SignUpModal from '../components/general/ui/SignUpModal'
 import React from 'react'
 const testFunction = () => {
     console.log('hello')
 }
 const Index = props => (
-
     <div>
-        <SearchboxClass
-            placeholder="Search"
-            onChange={console.log('Firing')}
-            onSubmit={testFunction} />
+        <SignUpModal
+            title="This is the signup Page"
+            subtitle="subtitle"
+        />
     </div>
 )
 
