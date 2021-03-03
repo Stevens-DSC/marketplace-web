@@ -14,15 +14,7 @@ const styles = () => ({
 class ContactUs extends React.Component {
 
     render() {
-        const { header } = this.props
         return (
-            // <div>
-            //     <h1>{header}</h1>
-            //     <div style={styles()}>
-            //         {this.props.children}
-            //     </div>
-
-            // </div>
             <div style={styles()}>
                 <div style={{display:'flex', flexDirection:"column", textAlign:"right", marginRight:"10px", alignItems:"flex-end"}}>
                     <div style={{display:"flex", alignItems:"center", padding:"6px 3px 6px 3px"}}>

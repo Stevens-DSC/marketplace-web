@@ -29,15 +29,8 @@ const answerCSS = () => ({
 class FAQ extends React.Component {
 
     render() {
-        const { header } = this.props
         return (
-            // <div>
-            //     <h1>{header}</h1>
-            //     <div style={styles()}>
-            //         {this.props.children}
-            //     </div>
 
-            // </div>
             <div style={styles()}>
                 <h1 name="FAQ" style={{textAlign:"center", marginTop:"20px", fontSize:"60px"}}>FAQ</h1>
                 <div class="faqBody" style={{textAlign:"center", marginTop:"20px"}}>
