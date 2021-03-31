@@ -1,42 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
 body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
-    max-width: 800px;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 
-.header-bar {
+.header-content {
      display: flex;
+     max-width: 980px;
+     margin: auto;
 }
+
 .primary-header {
     width: fit-content;
     width:100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
 }
+
+.logoitem {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
 .primary-header>ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
     list-style: none;
     width: fit-content;
-    padding-left: 0;
+    height: fit-content;
+   
 }
 
 .header-options>li {
-    padding-right: 20px;
+    padding-right: 40px;
+    /* padding-left: 20px; */
     list-style-type: none;
     width: fit-content;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: auto;
+    height: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: 400; */
+
 }
+.primary-header {
+    vertical-align: middle;
+}
+
 .header-options>li>a {
     text-decoration: none;
     color: black;
 }
+
 .spacer-center {
     width: 100%;
 }
+
 .secondary-header {
     margin-top: auto;
     margin-bottom: auto;
     align-self: right;
     width: fit-content;
 }
+
+.app-container {
+    max-width: 980px;
+    margin: auto;
+}
+
+/* * {
+    border: 1px solid rgba(0,0,0,0.5);
+} */
