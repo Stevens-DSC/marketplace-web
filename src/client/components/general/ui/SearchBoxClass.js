@@ -21,21 +21,30 @@ class SearchBoxClass extends React.Component {
     }
 
     render() {
-        const styles = { width: "20rem", background: "#F2F1F9", border: "1px", padding: "0.5rem", alignItems: 'center' }
+        const styles = {
+            height: "70px",
+            background: "#FFFFFF",
+            border: "3px solid #E26944",
+            padding: "0.5rem",
+            alignItems: 'center',
+            fontsize: "24px",
+            boxSizing: "border-box"
+        }
+
         const { onChange, onSubmit, placeholder, value } = this.props;
         return (
-            <form onSubmit={this.handleSubmit} style={{ alignItems: 'center', }}>
+            <form onSubmit={this.handleSubmit} style={{ alignItems: 'center'}}>
                 <label>
                     <input
                         type="text"
                         placeholder={placeholder}
-                        style={styles}
+                        style={Object.assign({},styles, {marginRight:"12px", borderRadius: "35px", width: "40rem"})}
                         value={value}
                         onChange={(event) => this.handleChange(event)}
                         handleSubmit={(event) => this.handleSubmit(event)}
                     />
                 </label>
-                <input type="submit" value="Submit" />
+                <input type="submit" value="Go!" style={Object.assign({},styles, {borderRadius: "32px", width: "80px"})} />
             </form >
         );
     }
