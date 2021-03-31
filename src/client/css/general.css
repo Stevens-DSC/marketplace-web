@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap');
 body {
     padding: 0;
     margin: 0;
     font-family: sans-serif;
     margin: auto;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header-content {
@@ -10,10 +12,12 @@ body {
      max-width: 980px;
      margin: auto;
 }
+
 .primary-header {
     width: fit-content;
     width:100%;
 }
+
 .primary-header>ul {
     display: flex;
     flex-direction: row;
@@ -28,13 +32,16 @@ body {
     list-style-type: none;
     width: fit-content;
 }
+
 .header-options>li>a {
     text-decoration: none;
     color: black;
 }
+
 .spacer-center {
     width: 100%;
 }
+
 .secondary-header {
     margin-top: auto;
     margin-bottom: auto;
@@ -46,3 +53,7 @@ body {
     max-width: 980px;
     margin: auto;
 }
+
+/* * {
+    border: 1px solid rgba(0,0,0,0.5);
+} */

@@ -11,7 +11,7 @@ const BusinessPage = (props) => {
     if(!props.success) {
         return <p>Error: {props.error || ""}</p>
     }
-    const { store } = props
+    const { store, products } = props
 
     const { 
         cityname,
@@ -23,6 +23,7 @@ const BusinessPage = (props) => {
         shortname,
         email
     } = store
+    
 
     return (
         <>
@@ -30,9 +31,12 @@ const BusinessPage = (props) => {
                 <title>{displayname} | Square Mile Market</title>
                 <meta name="description" key="description" value={description} />
             </Head>
-            <code>
-                {JSON.stringify(store, null, 4)}
-            </code>
+            <h1>{displayname}</h1>
+            <p>{description}</p>
+            <h2>Products</h2>
+            <ul>
+                {products.map((product, c) => <li key={`product${c}`}><a href={`/product/${product.shortcode}`}>{product.displayname}</a></li>)}
+            </ul>
         </>
     )
 }
@@ -41,11 +45,14 @@ BusinessPage.getInitialProps = async function (context) {
     const name = context.query.id
     try {
         const req = await api.getStoreByShortName({ shortname: name })
+        const products = await api.getProductsBySeller({ seller: name })
+
         return {
             loaded: true,
             success: true,
             error: false,
-            store: req
+            store: req,
+            products
         }
     }catch(e) {
         return {

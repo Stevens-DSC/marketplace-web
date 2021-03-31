@@ -5,13 +5,21 @@ import api from '../../../utils/api'
 
 
 const BusinessListing = (props) => {
+
+    if(!props.loaded) {
+        return <p>Loading...</p>
+    }
+    if(!props.success) {
+        return <p>Error: {props.error || ""}</p>
+    }
+
     // if(!props.loaded) {
     //     return <p>Loading...</p>
     // }
     // if(!props.success) {
     //     return <p>Error: {props.error || ""}</p>
     // }
-    // const { store } = props
+    const { stores } = props
 
     // const { 
     //     cityname,
@@ -31,28 +39,35 @@ const BusinessListing = (props) => {
                 {/* <meta name="description" key="description" value={description} /> */}
             </Head>
             <h1>Our partners</h1>
-            <p>Loading...</p>
+            <ul>
+                {
+                    stores.map(({displayname, shortname},c) => <li key={`store${c}`}><a href={`/business/${shortname}`}>{displayname}</a></li>)
+                }
+            </ul>
+            <p>Loaded {stores.length} stores</p>
         </>
     )
 }
-
+// switch to other lifecycle event if handling personal data.
+// this is run serverside
 BusinessListing.getInitialProps = async function (context) {
-    // const name = context.query.id
-    // try {
-    //     const req = await api.getStoreByShortName({ shortname: name })
-    //     return {
-    //         loaded: true,
-    //         success: true,
-    //         error: false,
-    //         store: req
-    //     }
-    // }catch(e) {
-    //     return {
-    //         loaded: true,
-    //         success: false,
-    //         error: e + ""
-    //     }
-    // }
+    try {
+        const req = await api.getAllStores()
+        console.log("BBBBBBBBBBBBBBBBBBBBBBBB" + req)
+        return {
+            loaded: true,
+            success: true,
+            error: false,
+            stores: req
+        }
+    }catch(e) {
+        console.log(e)
+        return {
+            loaded: true,
+            success: false,
+            error: e + ""
+        }
+    }
     return {
         
     }
