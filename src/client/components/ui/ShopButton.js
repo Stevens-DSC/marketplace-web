@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import template from '../../css/constants/styles'
 
-
-
 const linkStyles = {
   color: 'white',
   textDecoration: 'none',
@@ -20,7 +18,8 @@ const linkStyles = {
 const Button = ({to, text}) => {
   return (
       <Link href={to}>
-          <a target="_blank" style={{textDecoration: 'none'}}><span style={linkStyles}>{text}</span></a>
+          <a target="_blank" style={{textDecoration: 'none'}}>
+            <span style={linkStyles}>{text}</span></a>
       </Link>
 
   )

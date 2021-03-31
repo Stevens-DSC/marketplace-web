@@ -3,9 +3,10 @@ module.exports = {
     jumbotron_back: "#0F4157",
     border_stripe: "#F46036",
     almost_black: "#081C23",
+    invert_white: 'white',
 
     grid_back: "#3384A7",
     grayscale_text: "#707070",
     darker_grayscale_text: "#383838",
-    font_accent: "'Lexend', sans-serif"
+    font_accent: "'Lexend', sans-serif",
 }
