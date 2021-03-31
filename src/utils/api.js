@@ -1,5 +1,4 @@
 import fetch from 'node-fetch'
-import { SymbolDisplayPartKind } from 'typescript'
 
 const ENDPOINT = ep => `https://us-central1-dsc-marketplace.cloudfunctions.net/${ep}`
 

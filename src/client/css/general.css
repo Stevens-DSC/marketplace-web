@@ -16,6 +16,15 @@ body {
 .primary-header {
     width: fit-content;
     width:100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.logoitem {
+    padding-top: 12px;
+    padding-bottom: 12px;
 }
 
 .primary-header>ul {
@@ -24,13 +33,25 @@ body {
     list-style-type: none;
     list-style: none;
     width: fit-content;
-    padding-left: 0;
+    height: fit-content;
+   
 }
 
 .header-options>li {
-    padding-right: 20px;
+    padding-right: 40px;
+    /* padding-left: 20px; */
     list-style-type: none;
     width: fit-content;
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: auto;
+    height: fit-content;
+    font-family: 'Open Sans', sans-serif;
+    /* font-weight: 400; */
+
+}
+.primary-header {
+    vertical-align: middle;
 }
 
 .header-options>li>a {

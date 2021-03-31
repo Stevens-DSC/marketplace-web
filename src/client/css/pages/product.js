@@ -1,4 +1,4 @@
-import template from '../../css/constants/styles'
+import template from '../constants/styles'
 
 const containerElement = {
     padding: 10

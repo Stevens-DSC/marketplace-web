@@ -2,7 +2,7 @@
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import api from '../../../utils/api'
-import styles from './styles'
+import styles from '../../css/pages/product'
 import ShopButton from '../../components/ui/ShopButton'
 
 
