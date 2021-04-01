@@ -16,7 +16,7 @@ export default class Footer extends Component {
         return (
             <footer>
                 <div style={styles}>
-                    <span>Made with ❤️ in Hoboken by Stevens DSC</span>
+                    <span>Made with ❤️ in Hoboken by Stevens Google DSC</span>
                 </div>
             </footer>
         );

@@ -57,7 +57,29 @@ const Index = props => (
                         opacity: 0.9,
                         filter: 'grayscale(0.7)',
                         margin: 30,
+                        marginBottom: 0
                     }} src="https://i.imgur.com/QFsf2PS.png" />
+                </div>
+            </div>
+
+            <div className="mobile-become-cols" style={sideBySideBox}>
+            <div className={'mobile-hide'} style={sideBySideInner}>
+                    <img style={{
+                        maxWidth: '100%',
+                        borderRadius: 20,
+                        // opacity: 0.9,
+                        // filter: 'grayscale(0.7)',
+                        margin: 30,
+                        marginTop: 0
+                    }} src="https://i.imgur.com/0N80xE3.png" />
+                </div>
+
+                <div style={sideBySideInner}>
+                <h1>Who we are</h1>
+                <p style={paragraph}>We are the Google Developer Student Club at Stevens Institute of Technology in Hoboken, New Jersey. We are a collection of students from all different grades and majors, who have come together to use what we know to create a response to the Google Solution Challenge.</p>
+                <Link href="https://instagram.com/sqmilemarket">
+                    <a style={{color: "#2778e8"}}>Follow us ›</a>
+                </Link>
                 </div>
             </div>
 

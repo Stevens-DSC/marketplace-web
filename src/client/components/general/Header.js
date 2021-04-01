@@ -16,9 +16,8 @@ export default class Header extends Component {
             <div className="header-bar" style={styles}>
                 <div className="header-content">
                     <div className="primary-header">
-                    <Link href="/"><a style={styleLinkElement}><img className="logoitem" src={'https://firebasestorage.googleapis.com/v0/b/dsc-marketplace.appspot.com/o/logo-large.png?alt=media&token=6be2f5b7-f112-4e30-b298-c44b0a4ad43f'} height={40} /></a></Link>
+                    <Link href="/"><a style={styleLinkElement}><img className="logoitem" src={'https://i.imgur.com/kVmwZoI.png'} height={40} /></a></Link>
                         <ul className="header-options">
-                            {/* <li><Link href="/business"><a style={styleLinkElement}>Businesses</a></Link></li> */}
                             <li><Link href="/search"><a style={styleLinkElement}>Products</a></Link></li>
                             <li><Link href="/about"><a style={styleLinkElement}>About Us</a></Link></li>
                         </ul>
