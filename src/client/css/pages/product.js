@@ -6,8 +6,7 @@ const containerElement = {
 
 const styles = {
     sideBySideContainer: {
-        display: 'flex',
-        flexDirection: 'row'
+        display: 'flex'
     },
     
     imageBox: {
@@ -19,7 +18,7 @@ const styles = {
         width: 'fit-content'
     },
     primaryTitle: {
-        "font-family": "'Lexend', sans-serif",
+        "fontFamily": "'Lexend', sans-serif",
         color: template.almost_black,
         fontSize: 26
     },
@@ -30,7 +29,7 @@ const styles = {
     },
     primaryDescriptionBox: {
         color: template.darker_grayscale_text,
-        "font-family": "'Lexend', sans-serif",
+        "fontFamily": "'Lexend', sans-serif",
         fontWeight: 500,
         marginBottom: 28
     },
@@ -44,12 +43,12 @@ const styles = {
     fromSection: {
         paddingLeft: 8,
         fontWeight: 600,
-        "font-family": "'Lexend', sans-serif",
+        "fontFamily": "'Lexend', sans-serif",
         fontSize: 16,
     },
     fromDescriptionText: {
         color: template.grayscale_text,
-        "font-family": "'Lexend', sans-serif",
+        "fontFamily": "'Lexend', sans-serif",
         fontWeight: 600,
     },
     secondaryDescriptionBox: {

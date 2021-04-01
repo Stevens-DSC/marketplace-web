@@ -29,7 +29,7 @@ const Page = ({searchState}) => (
       <title> Search - {searchState.query} | Square Mile Market</title>
     </Head>
     <h1>Search</h1>
-    <div className="ais">
+    <div className="ais-block">
       <Configure hitsPerPage={12} />
       <SearchBox />
       <RefinementList attribute="categories" />

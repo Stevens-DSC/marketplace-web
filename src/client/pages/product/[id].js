@@ -44,7 +44,7 @@ const ProductPage = (props) => {
                 <meta name="description" key="description" value={description} />
             </Head>
             
-            <div style={styles.sideBySideContainer}>
+            <div className="mobile-become-cols" style={styles.sideBySideContainer}>
                 <div style={styles.imageBox}>
                     <img src={image} width="300px"/>
                 </div>

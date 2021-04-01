@@ -101,10 +101,14 @@ body {
     margin: 8px;
 }
 
-.ais {
+.ais-block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    width: fit-content;
 }
 
 .ais-SearchBox-form {
@@ -124,3 +128,26 @@ a {
 a:visited {
     color: inherit;
 }
+
+@media only screen and (max-width: 1076px) {
+    .header-content {
+      margin-left: 48px;
+      margin-right: 48px;
+    }
+
+    .app-container {
+        margin-left: 48px;
+        margin-right: 48px;
+    }
+  }
+  .mobile-become-cols {
+    flex-direction: row;
+}
+  @media only screen and (max-width: 800px) {
+    .mobile-become-cols {
+        flex-direction: column;
+    }
+    .mobile-hide {
+        display: none;
+    }
+  }

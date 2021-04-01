@@ -13,19 +13,19 @@ const styleLinkElement = {
 export default class Header extends Component {
     render() {
         return (
-            <div class="header-bar" style={styles}>
-                <div class="header-content">
-                    <div class="primary-header">
-                    <Link href="/"><a style={styleLinkElement}><img className="logoitem" src={'/img/logo-large.png'} height={40} /></a></Link>
-                        <ul class="header-options">
-                            <li><Link href="/business"><a style={styleLinkElement}>Businesses</a></Link></li>
-                            <li><Link href="/product"><a style={styleLinkElement}>Products</a></Link></li>
+            <div className="header-bar" style={styles}>
+                <div className="header-content">
+                    <div className="primary-header">
+                    <Link href="/"><a style={styleLinkElement}><img className="logoitem" src={'https://firebasestorage.googleapis.com/v0/b/dsc-marketplace.appspot.com/o/logo-large.png?alt=media&token=6be2f5b7-f112-4e30-b298-c44b0a4ad43f'} height={40} /></a></Link>
+                        <ul className="header-options">
+                            {/* <li><Link href="/business"><a style={styleLinkElement}>Businesses</a></Link></li> */}
+                            <li><Link href="/search"><a style={styleLinkElement}>Products</a></Link></li>
                             <li><Link href="/about"><a style={styleLinkElement}>About Us</a></Link></li>
                         </ul>
                     </div>
 
-                    {/* <div class="spacer-center"></div>
-                    <div class="secondary-header">
+                    {/* <div className="spacer-center"></div>
+                    <div className="secondary-header">
                         <input />
                     </div> */}
                 </div>

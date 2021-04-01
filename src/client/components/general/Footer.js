@@ -6,7 +6,9 @@ const styles = {
     marginTop: 20,
     paddingTop: 20,
     borderTop: `1px solid ${styleRegistry.grayscale_text}`,
-    paddingBottom: 40
+    paddingBottom: 40,
+    opacity: 0.4,
+    filter: 'grayscale(1)'
 }
 
 export default class Footer extends Component {

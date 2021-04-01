@@ -1,6 +1,8 @@
+const { default: responsiveObserve } = require('antd/lib/_util/responsiveObserve')
 const admin = require('firebase-admin')
 const functions = require('firebase-functions')
 const next = require('next')
+const sitemap = require('./generateSitemap')
 
 admin.initializeApp()
 
@@ -14,7 +16,10 @@ const app = next({
 const handle = app.getRequestHandler();
 
 const server = functions.https.onRequest((request, response) => {
-  // log the page.js file or resource being requested
+  if(request.originalUrl.includes("sitemap.xml")) {
+    sitemap().then(r=>response.send(r))
+    return
+  }
   console.log("File: " + request.originalUrl);
   request.admin = admin
   return app.prepare().then(() => handle(request, response));
@@ -23,5 +28,5 @@ const server = functions.https.onRequest((request, response) => {
 const nextjs = {
   server,
 };
-
+ 
 module.exports =  { nextjs };
